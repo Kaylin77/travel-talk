@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="112" fill="#315de8"/>
-  <path d="M137 102h238c37 0 67 30 67 67v157c0 37-30 67-67 67H211l-80 43v-50c-36-5-61-34-61-68V169c0-37 30-67 67-67Z" fill="#fff"/>
-  <path d="m155 266 203-111-66 207-43-78-94-18Z" fill="#315de8" stroke="#315de8" stroke-linejoin="round" stroke-width="7"/>
-  <path d="m249 284 109-129" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="14"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <title>TripTalk</title>
+  <rect width="512" height="512" fill="#F0EDFB"/>
+  <path d="M177 120h158c44 0 73 30 73 73v104c0 44-29 74-73 74h-89l-62 40v-40h-7c-44 0-73-30-73-74V193c0-43 29-73 73-73Z" stroke="#6554DD" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m174 239 155-58-49 135-34-65-72-12Z" fill="#E2DCF8" stroke="#6554DD" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m246 251 83-70" stroke="#6554DD" stroke-width="12" stroke-linecap="round"/>
 </svg>

@@ -127,7 +127,7 @@
   function scenePage(scene) {
     if(scene.id==='forms') return formsPage();
     const list=tasks.filter(t=>t.scene===scene.id);
-    return `<div class="task-page">${back()}<div class="scene-heading"><span class="scene-icon" style="--tint:${scene.tint};--color:${scene.color}">${icon(scene.icon,30)}</span><div><div class="page-label">${esc(scene.en)}</div><h1>${esc(sceneName(scene))}</h1><p>${esc(sceneDesc(scene))}</p></div></div>
+    return `<div class="task-page">${back()}<div class="scene-heading"><span class="scene-icon">${sceneGlyph(scene.id)}</span><div><div class="page-label">${esc(scene.en)}</div><h1>${esc(sceneName(scene))}</h1><p>${esc(sceneDesc(scene))}</p></div></div>
       ${scene.id==='spa'?`<button class="secondary-button" data-go="spa-builder">${icon('pencil',17)} Build a booking message ${icon('arrow',14)}</button>`:''}
       
       <div class="task-list">${list.map((t,i)=>`<button class="task-card" data-go="task" data-id="${t.id}"><span class="task-number">${String(i+1).padStart(2,'0')}</span><span class="task-text"><strong>${esc(taskName(t))}</strong><p>${esc(taskDesc(t))}</p></span>${icon('chevron',17)}</button>`).join('')}</div>
@@ -135,7 +135,7 @@
   }
 
   function formsPage() {
-    return `<div class="task-page">${back()}<div class="scene-heading"><span class="scene-icon" style="--tint:#eef2f8;--color:#8c9bb5">${icon('document',30)}</span><div><div class="page-label">TRAVEL NOTES</div><h1>Travel notes</h1><p>Forms & useful terms</p></div></div>
+    return `<div class="task-page">${back()}<div class="scene-heading"><span class="scene-icon">${sceneGlyph('forms')}</span><div><div class="page-label">TRAVEL NOTES</div><h1>Travel notes</h1><p>Forms & useful terms</p></div></div>
       <div class="tip">${icon('info',16)} <span>这是英文理解辅助，不代替官方表格或最新入境要求。具体填写以目的地官方页面为准。</span></div>
       ${notes.map(n=>`<article class="reading-card"><span class="reading-label">TRAVEL TERM</span><h3 lang="en">${esc(n.en)}</h3><p><strong>${esc(n.zh)}</strong><br>${esc(n.body)}</p></article>`).join('')}
       <p class="notice">Official arrival card: <a href="https://imigresen-online.imi.gov.my/mdac/main" target="_blank" rel="noopener noreferrer">Malaysia Digital Arrival Card ${icon('external',12)}</a></p>

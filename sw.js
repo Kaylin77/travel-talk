@@ -1,4 +1,4 @@
-const CACHE_NAME = 'triptalk-shell-v10';
+const CACHE_NAME = 'triptalk-shell-v13';
 const SCOPE = self.registration.scope;
 const SHELL_PATHS = [
   'index.html',
@@ -8,9 +8,11 @@ const SHELL_PATHS = [
   'app.js',
   'lucide.min.js',
   'manifest.webmanifest',
-  'icon.svg',
-  'icon-192.png',
-  'icon-512.png'
+  'icon.svg?v=11',
+  'icon-192.png?v=11',
+  'icon-512.png?v=11',
+  'apple-touch-icon.png?v=11',
+  'favicon-32.png?v=11'
 ];
 const SHELL_URLS = SHELL_PATHS.map(path => new URL(path, SCOPE).href);
 

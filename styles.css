@@ -136,7 +136,9 @@ button svg { pointer-events: none; }
 .phrase-actions { display: flex; gap: 8px; align-items: center; margin-left: auto; flex-shrink: 0; }
 .sound-button { display: inline-flex; gap: 6px; align-items: center; justify-content: center; color: var(--blue); border-radius: 13px; min-height: 44px; padding: 10px 12px; font-size: 12px; background: #f2effb; }
 .sound-button.speaking { animation: pulse 1s infinite; }
-.is-saved { color: var(--blue) !important; }
+.is-saved { color: var(--blue) !important; background: #eeeafd; }
+.is-saved:hover { background: #e7e1fb; }
+.is-saved svg { fill: currentColor; stroke: currentColor; }
 .is-learned { color: var(--green) !important; }
 .back-row { display: flex; align-items: center; margin: 0 0 19px; gap: 8px; }
 .back-row button { display: flex; align-items: center; gap: 7px; min-height: 44px; color: var(--muted); font-size: 13px; padding: 0 6px 0 0; flex-shrink: 0; }
