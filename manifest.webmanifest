@@ -1,0 +1,17 @@
+{
+  "id": "./",
+  "name": "TripTalk — Travel English",
+  "short_name": "TripTalk",
+  "description": "旅行中的地道英语表达与场景对话",
+  "lang": "en",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f8f8fc",
+  "theme_color": "#6558dc",
+  "icons": [
+    { "src": "./icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
